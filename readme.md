@@ -22,6 +22,33 @@
 
 2. Crear rama para seccion navbar
 
+    - Crear rama navbar
+
+      ```
+      git branch navbar
+      git branch
+      git checkout navbar
+
+      ```
+
+      Directamente con:
+
+      ```
+      git checkout -b navbar
+
+      ```
+    - Implementar navbar en función de media queries
+
+
+    - Subir rama navbar a repositorio remoto
+
+    ```
+    git add .
+    git commit -m "subiendo rama navbar"
+    git push -u origin navbar
+
+    ```
+
 3. Crear rama para seccion main
 
 4. Crear rama para sección footer.
