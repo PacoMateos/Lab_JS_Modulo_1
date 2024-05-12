@@ -1,27 +1,46 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --colorBlanco: #ffffff;
+  --colorNegro: #212429;
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html{
+  margin: 0 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: var(--colorNegro)
+}
+
+body{
+  margin: 0 16px;
+}
 
 /* NAVBAR */
 
 .navbar {
   height: 64px;
+  padding: 8px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  background-color: darkgray;
-  border-color: 1px solid var(--colorNegro);
+  background-color: #f3f4f6;
+  border-bottom: 1px solid var(--colorNegro);
 }
 
 .navbar a{
   padding: 0 8px;
   text-decoration: none;
+  color: var(--colorNegro) /* -webkit any link */
 }
 
 /* Mobile First */
@@ -33,8 +52,14 @@
   display: none;
 }
 
+/* MAIN */
 
-
+main{
+  padding: 16px;
+}
+.title{
+  font-size: 32px;
+}
 
 @media (min-width: 768px) {
   .products { grid-template-columns: repeat(2, 1fr); }
